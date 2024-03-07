@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dng8u010fuw10"]
+
+[ext_resource type="PackedScene" uid="uid://ds3kgv0rg80ag" path="res://Scenes/Instances/player.tscn" id="1_en7hi"]
+
+[node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_en7hi")]
+position = Vector2(293, 252)
+
+[node name="TempWalls" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TempWalls"]
+polygon = PackedVector2Array(211, 298, 426, 303, 425, 267, 577, 269, 581, 370, 115, 357, 117, 216, 154, 216, 152, 328, 212, 330)
